@@ -19,6 +19,7 @@ public class SpringJenkinsApplicationTests {
 	public void contextLoads() {
 		logger.info("Test case executing...");
 		logger.info("Test case executing...Second long is started");
+		logger.info("Test case executing...Second long is started 23-09-2025");
 		assertEquals(true, true);
 	}
 
