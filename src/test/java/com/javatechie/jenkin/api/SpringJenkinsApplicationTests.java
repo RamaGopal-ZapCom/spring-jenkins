@@ -20,7 +20,8 @@ public class SpringJenkinsApplicationTests {
 		logger.info("Test case executing...");
 		logger.info("Test case executing...Second long is started");
 		logger.info("Test case executing...Second long is started 23-09-2025");
-		assertEquals(true, true)
+		logger.info("Test case executing...Second long is started 23-09-2025--------");
+		assertEquals(true, true);
 	}
 
 }
