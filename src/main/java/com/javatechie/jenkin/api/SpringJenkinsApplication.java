@@ -22,7 +22,7 @@ public class SpringJenkinsApplication extends SpringBootServletInitializer {
 
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hi Jenkins How are you?..";
+		return "Hi Jenkins How are you..";
 	}
 
 	public static void main(String[] args) {
