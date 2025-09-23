@@ -21,6 +21,12 @@ public class SpringJenkinsApplication {
 		return "Hi Jenkins How are you..";
 	}
 
+	@GetMapping("/welcome")
+	public String welcome() {
+		return "Hi Jenkins welcome.";
+	}
+
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 	}
