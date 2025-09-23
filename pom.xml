@@ -33,6 +33,10 @@
 	</dependencies>
 
 	<build>
+
+			<finalName>spring-jenkins</finalName>
+
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
