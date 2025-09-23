@@ -20,6 +20,11 @@ public class SpringJenkinsApplication extends SpringBootServletInitializer {
 		return "Wao!! Application Deployed successfully in SAP Cloud..";
 	}
 
+	@GetMapping("/hello")
+	public String hello() {
+		return "Hi Jenkins How are you?..";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringJenkinsApplication.class, args);
 	}
