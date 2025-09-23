@@ -9,8 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class SpringJenkinsApplication {
+public class SpringJenkinsApplication extends SpringBootServletInitializer {
 
+	//“Extending SpringBootServletInitializer and overriding configure() allows a Spring Boot
+	// application to be deployed as a WAR on an external servlet container like Tomcat,
+	// specifying the main application class for initialization.
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+		return builder.sources(SpringJenkinsApplication.class);
+	}
 	@GetMapping("/ping")
 	public String message() {
 		return "Wao!! Application Deployed successfully in SAP Cloud..";
