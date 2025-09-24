@@ -37,6 +37,7 @@ public class SpringJenkinsApplication extends SpringBootServletInitializer {
 	@GetMapping("/welcomeMessage")
 	public String welcomeMessage() {
 		return "Hi Jenkins welcomeMessage.";
+
 	}
 
 
